@@ -4,8 +4,8 @@ from random import randrange
 import os
 # Change the current directory 
 # to specified directory
-directory = "/Users/dongsukma/Desktop/ai_tutorial/detection_on_image/"
-os.chdir(directory)
+cwd = os.getcwd() + "/detection_on_cam/"
+os.chdir(cwd)
 
 #get a bunch of face data
 trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
